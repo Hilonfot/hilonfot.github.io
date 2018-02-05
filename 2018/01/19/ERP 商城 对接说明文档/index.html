@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/bitbug_favicon.ico?v=">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/bitbug_favicon.ico?v=">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/bitbug_favicon.ico?v=">
+
+
+
+
+
+
+  <meta name="keywords" content="work," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Hilon's Notes" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="写的一点对接文档，用于跟商城那边做对接,写的还比较详细">
+<meta name="keywords" content="work">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ERP &#x2F; 商城 对接说明文档[加密]">
+<meta property="og:url" content="http://hilon.xin/2018/01/19/ERP 商城 对接说明文档/index.html">
+<meta property="og:site_name" content="Hilon&#39;s Notes">
+<meta property="og:description" content="写的一点对接文档，用于跟商城那边做对接,写的还比较详细">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://hilon.xin/2018/01/19/ERP%20商城%20对接说明文档/images/595a7e1e266f2.gif">
+<meta property="og:updated_time" content="2018-02-05T01:59:16.275Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ERP &#x2F; 商城 对接说明文档[加密]">
+<meta name="twitter:description" content="写的一点对接文档，用于跟商城那边做对接,写的还比较详细">
+<meta name="twitter:image" content="http://hilon.xin/2018/01/19/ERP%20商城%20对接说明文档/images/595a7e1e266f2.gif">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<script>
+    (function(){
+        if('522923080'){
+            if (prompt('请输入文章密码') !== '522923080'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+  <link rel="canonical" href="http://hilon.xin/2018/01/19/ERP 商城 对接说明文档/"/>
+
+
+
+
+
+  <title>ERP / 商城 对接说明文档[加密] | Hilon's Notes</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hilon's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Just 4 fun</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://hilon.xin/2018/01/19/ERP 商城 对接说明文档/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="万千但猫耳@">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/854166685.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hilon's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">ERP / 商城 对接说明文档[加密]</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-19T21:01:04+08:00">
+                2018-01-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/works/" itemprop="url" rel="index">
+                    <span itemprop="name">works</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/19/ERP 商城 对接说明文档/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/01/19/ERP 商城 对接说明文档/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  写的一点对接文档，用于跟商城那边做对接,写的还比较详细
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="images/595a7e1e266f2.gif" alt=""></p>
+<h3 id="0-库房项目存放地址-http-mg-cqyonghong-com-woju"><a href="#0-库房项目存放地址-http-mg-cqyonghong-com-woju" class="headerlink" title="0. 库房项目存放地址 http://mg.cqyonghong.com/woju"></a>0. 库房项目存放地址 <a href="http://mg.cqyonghong.com/woju" target="_blank" rel="noopener">http://mg.cqyonghong.com/woju</a></h3><p><strong>URL</strong>： 项目地址<strong>·</strong>接口url   </p>
+<h3 id="1-token验证说明"><a href="#1-token验证说明" class="headerlink" title="1. token验证说明"></a>1. token验证说明</h3><p><strong>内容</strong>：制定一个token生成规则，按某些服务器端和客户端都拥有的共同属性生成一个随机串，客户端生成这个串，服务器收到请求也校验这个串。<br><strong>缺点</strong>： 随机串生成规则要保密 .<br><strong>Auth-date</strong>：[add by hilon2019@gmail.com  2018-01-15]      </p>
+<h5 id="发送端-生成token："><a href="#发送端-生成token：" class="headerlink" title="发送端 / 生成token："></a>发送端 / 生成token：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//请求列表，api是“index.php?module=user&amp;action=list”</span><br><span class="line"></span><br><span class="line">md5 (&apos;user&apos;.&apos;2018-01-15&apos;.&apos;#$@%!&apos;.&apos;list&apos;) </span><br><span class="line">//app生成token = 880fed4ca2aabd20ae9a5dd774711de2;</span><br><span class="line"></span><br><span class="line">//实际发起请求为 “index.php?module=user&amp;action=list&amp;token=880fed4ca2aabd20ae9a5dd774711de2”</span><br></pre></td></tr></table></figure>
+<h5 id="接收端接收-计算token："><a href="#接收端接收-计算token：" class="headerlink" title="接收端接收 / 计算token："></a>接收端接收 / 计算token：</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$module = $_GET[<span class="string">'module'</span>];</span><br><span class="line">$action = $_GET[<span class="string">'action'</span>];</span><br><span class="line">$token  = md5($module.date(<span class="string">'Y-m-d'</span>,time()).<span class="string">'#$@%!*'</span>.$action);</span><br><span class="line">$token_pre = md5($module.date(<span class="string">'Y-m-d'</span>,time()<span class="number">-24</span>*<span class="number">3600</span>).<span class="string">'#$@%!*'</span>.$action);</span><br><span class="line"><span class="keyword">if</span>($token == $_GET[<span class="string">'token'</span>] || $token_pre == $_GET[<span class="string">'token'</span>])&#123;</span><br><span class="line">    <span class="comment">//other code .....</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">'access deny'</span>;</span><br><span class="line">    <span class="keyword">exit</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-加盟商（ERP）商品发送到商城下单"><a href="#2-加盟商（ERP）商品发送到商城下单" class="headerlink" title="2. 加盟商（ERP）商品发送到商城下单"></a>2. 加盟商（ERP）商品发送到商城下单</h3><p><strong>接口地址</strong>： none .<br><strong>请求对象</strong>： JSON<br><strong>响应对象</strong>： JSON<br><strong>参数校验</strong>： token正确 , 商品编码 / 数量 不能为空，<br><strong>触发描述</strong>： 当 合同类型 / 成品家具 时，加盟商（ERP）在提交成为正式合同时，cURL  商品数编码 / 购买数量 / 购买用户信息到 商城，生成对应的订单。<br><strong>Auth-date</strong>：[add by hilon2019@gmail.com  2018-01-15]  </p>
+<h5 id="请求格式："><a href="#请求格式：" class="headerlink" title="请求格式："></a>请求格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">     "account": "13883005487",//加盟商账户</span><br><span class="line">     "shop": //商品信息（多维）</span><br><span class="line">     [&#123;</span><br><span class="line">            <span class="attr">"number"</span>:<span class="string">"9420"</span>,<span class="attr">"num"</span>:<span class="string">"2"</span></span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"number"</span>:<span class="string">"9435"</span>,<span class="attr">"num"</span>:<span class="string">"5"</span></span><br><span class="line">        &#125;],</span><br><span class="line">     <span class="string">"clientInfo: //订单 收货人 / 收货地址 / 收货联系电话</span></span><br><span class="line"><span class="string">     &#123;</span></span><br><span class="line">           "name":"廖海龙</span><br><span class="line">           "address":"重庆市巴南区万达步行金街T9-29楼"</span><br><span class="line">           "tel":"13883005487"</span><br><span class="line">     &#125;,</span><br><span class="line">  "platForm":"erp", //提交类型</span><br><span class="line">     "token": //验证</span><br><span class="line">     <span class="string">"61ac457deb525358a5bbfb1cddd3f18c"</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="返回格式："><a href="#返回格式：" class="headerlink" title="返回格式："></a>返回格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;  </span><br><span class="line">    "messageCode":"1",//错误代码（成功为1）  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-ERP-商城-，加盟商账号同步"><a href="#3-ERP-商城-，加盟商账号同步" class="headerlink" title="3.  ERP / 商城 ，加盟商账号同步"></a>3.  ERP / 商城 ，加盟商账号同步</h3><p><strong>接口地址</strong>： none .<br><strong>请求对象</strong>： JSON<br><strong>响应对象</strong>： JSON<br><strong>参数校验</strong>： token正确 , 正则校验手机号码<br><strong>触发描述</strong>：ERP创建 加盟商 / 经销商 时，在商城创建 以手机号 对应的账户 。当ERP修改加盟商，如果修改手机号码信息，商城做相应修改手机账号 。<br><strong>Auth-date</strong>：[add by hilon2019@gmail.com  2018-01-16]  </p>
+<h5 id="创建时-请求格式："><a href="#创建时-请求格式：" class="headerlink" title="创建时 请求格式："></a>创建时 请求格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">     "mobile": "1380000000",//手机号（11位-正则）</span><br><span class="line">     "agent_manger":"张可可",//加盟商姓名</span><br><span class="line">     "rank_id":"1",</span><br><span class="line">     //加盟商级别   特殊加盟商 / 老加盟商 / 新加盟商 / 一级经销商 / 二级经销商 / 三级经销商</span><br><span class="line">     "brand": "1"//代理品牌 家由莱 / 窝居智家</span><br><span class="line">     "token": //验证</span><br><span class="line">     <span class="string">"61ac457deb525358a5bbfb1cddd3f18c"</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="修改时-请求格式："><a href="#修改时-请求格式：" class="headerlink" title="修改时 请求格式："></a>修改时 请求格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">      "account": "1380000000",//账户</span><br><span class="line">      "mobile"："1388888888",//新账户（11位-正则） 为空时，不重新绑定账户，只更新数据</span><br><span class="line">      "agent_manger":"张可可",//加盟商姓名</span><br><span class="line">      "rank_id":"1",</span><br><span class="line">      //加盟商级别   特殊加盟商 / 老加盟商 / 新加盟商 / 一级经销商 / 二级经销商 / 三级经销商</span><br><span class="line">      "brand": "1"//代理品牌 家由莱 / 窝居智家</span><br><span class="line">      "token": //验证</span><br><span class="line">      <span class="string">"61ac457deb525358a5bbfb1cddd3f18c"</span> </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h5 id="返回格式：-1"><a href="#返回格式：-1" class="headerlink" title="返回格式："></a>返回格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;  </span><br><span class="line">    "messageCode":"1",//错误代码（成功为1）  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-ERP-商城查看物料剩余库存-按区域查询"><a href="#4-ERP-商城查看物料剩余库存-按区域查询" class="headerlink" title="4.  ERP / 商城查看物料剩余库存 按区域查询"></a>4.  ERP / 商城查看物料剩余库存 按区域查询</h3><p>  <strong>接口地址</strong>：’ wh_showKc_layer.php?getStock=true&amp;token=’.$token.’&amp;number=BC.004.0681’<br>  <strong>请求方式</strong>： get<br>  <strong>响应对象</strong>： JSON<br>  <strong>token生成规则</strong>：md5(‘wh_showKc_layer’.date(“Y-m-d H:i”).’#$@%!’)<br>  <strong>参数校验</strong>： getStock为true,token正确,number为物料编码<br>  <strong>触发描述</strong>：客户在商城添加商品进入购物车时或者客户下单时<br>  <strong>Auth-date</strong>：[add by 冯相燃  2018-01-17]  </p>
+<h5 id="返回格式：-2"><a href="#返回格式：-2" class="headerlink" title="返回格式："></a>返回格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "success":"字符类型的整形值",//（成功为1 失败为0）</span><br><span class="line">     "kc":"number",//剩余库存量</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="5-ERP-商城下达订单-仓库备货"><a href="#5-ERP-商城下达订单-仓库备货" class="headerlink" title="5.  ERP / 商城下达订单 仓库备货"></a>5.  ERP / 商城下达订单 仓库备货</h3><p>  <strong>接口地址</strong>： ‘shopping_indent_in.php?token=’.$token<br>  <strong>请求方式</strong>： post<br>  <strong>响应对象</strong>： JSON<br>  <strong>token生成规则</strong>：md5(‘shopping_indent_in’.date(“Y-m-d H:i”).’#$@%!’)<br>  <strong>参数校验</strong>： token正确<br>  <strong>触发描述</strong>：客户在商城客户下单完成时<br>  <strong>Auth-date</strong>：[add by  冯相燃  2018-01-17]  </p>
+<h5 id="创建时-请求格式：-1"><a href="#创建时-请求格式：-1" class="headerlink" title="创建时 请求格式："></a>创建时 请求格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"number"</span>:<span class="string">"商城订单号"</span>,<span class="attr">"urgency_state"</span>:<span class="string">"订单紧急状态"</span>,<span class="attr">"0"</span>:&#123;<span class="attr">"bc"</span>:<span class="string">"物料编码"</span>,<span class="attr">"num"</span>:<span class="string">"购买数量"</span>&#125;,<span class="attr">"1"</span>:&#123;<span class="attr">"bc"</span>:<span class="string">"物料编码"</span>,<span class="attr">"num"</span>:<span class="string">"购买数量"</span>&#125;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line">//php 数值格式为 </span><br><span class="line">$data=json_encode(array('number'=&gt;'345','urgency_state'=&gt;'1',array('bc'=&gt;'BC.004.1420','num'=&gt;'1'),array('bc'=&gt;'BC.004.0681','num'=&gt;'1')));</span><br></pre></td></tr></table></figure>
+<h5 id="返回格式：-3"><a href="#返回格式：-3" class="headerlink" title="返回格式："></a>返回格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "success":"提示信息",//提示信息</span><br><span class="line">     "state":"字符类型的布尔值",//('true'为成功,'false'为失败)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="6-ERP-商城订单尚未发货-撤销订单"><a href="#6-ERP-商城订单尚未发货-撤销订单" class="headerlink" title="6.  ERP / 商城订单尚未发货 撤销订单"></a>6.  ERP / 商城订单尚未发货 撤销订单</h3><p>  <strong>接口地址</strong>： ‘shopping_indent_backout.php ?repealIndent=true&amp;token=’.$token.’&amp;indent_number=345 .<br>  <strong>请求方式</strong>： get<br>  <strong>响应对象</strong>： JSON<br>  <strong>token生成规则</strong>：md5(‘shopping_indent_backout’.date(“Y-m-d H:i”).’#$@%!’)<br>  <strong>参数校验</strong>： repealIndent为布尔值true,token正确,indent_number为正确的订单号<br>  <strong>触发描述</strong>：客户撤销订单时<br>  <strong>Auth-date</strong>：[add by  冯相燃  2018-01-17]  </p>
+<h5 id="返回格式：-4"><a href="#返回格式：-4" class="headerlink" title="返回格式："></a>返回格式：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "success":"提示信息",//提示信息</span><br><span class="line">     "state":"字符类型的布尔值",//('true'为成功,'false'为失败)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	<div>
+	  
+	    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+	  
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/work/" rel="tag"># work</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/06/study/" rel="next" title="Small details">
+                <i class="fa fa-chevron-left"></i> Small details
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/20/git的小技巧/" rel="prev" title="git的小技巧">
+                git的小技巧 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="hypercomments_widget"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/854166685.jpg"
+                alt="万千但猫耳@" />
+            
+              <p class="site-author-name" itemprop="name">万千但猫耳@</p>
+              <p class="site-description motion-element" itemprop="description">Whisper to the World</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/hilonfot" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hilon2019@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/like_my_gf" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/5688240365" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mg.cqyonghong.com/" title="molgol ERP" target="_blank">molgol ERP</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-库房项目存放地址-http-mg-cqyonghong-com-woju"><span class="nav-number">1.</span> <span class="nav-text">0. 库房项目存放地址 http://mg.cqyonghong.com/woju</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-token验证说明"><span class="nav-number">2.</span> <span class="nav-text">1. token验证说明</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#发送端-生成token："><span class="nav-number">2.0.1.</span> <span class="nav-text">发送端 / 生成token：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#接收端接收-计算token："><span class="nav-number">2.0.2.</span> <span class="nav-text">接收端接收 / 计算token：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-加盟商（ERP）商品发送到商城下单"><span class="nav-number">3.</span> <span class="nav-text">2. 加盟商（ERP）商品发送到商城下单</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#请求格式："><span class="nav-number">3.0.1.</span> <span class="nav-text">请求格式：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#返回格式："><span class="nav-number">3.0.2.</span> <span class="nav-text">返回格式：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-ERP-商城-，加盟商账号同步"><span class="nav-number">4.</span> <span class="nav-text">3.  ERP / 商城 ，加盟商账号同步</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#创建时-请求格式："><span class="nav-number">4.0.1.</span> <span class="nav-text">创建时 请求格式：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改时-请求格式："><span class="nav-number">4.0.2.</span> <span class="nav-text">修改时 请求格式：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#返回格式：-1"><span class="nav-number">4.0.3.</span> <span class="nav-text">返回格式：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-ERP-商城查看物料剩余库存-按区域查询"><span class="nav-number">5.</span> <span class="nav-text">4.  ERP / 商城查看物料剩余库存 按区域查询</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#返回格式：-2"><span class="nav-number">5.0.1.</span> <span class="nav-text">返回格式：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-ERP-商城下达订单-仓库备货"><span class="nav-number">6.</span> <span class="nav-text">5.  ERP / 商城下达订单 仓库备货</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#创建时-请求格式：-1"><span class="nav-number">6.0.1.</span> <span class="nav-text">创建时 请求格式：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#返回格式：-3"><span class="nav-number">6.0.2.</span> <span class="nav-text">返回格式：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-ERP-商城订单尚未发货-撤销订单"><span class="nav-number">7.</span> <span class="nav-text">6.  ERP / 商城订单尚未发货 撤销订单</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#返回格式：-4"><span class="nav-number">7.0.1.</span> <span class="nav-text">返回格式：</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">万千但猫耳@</span>
+
+  
+</div>
+<div class="powered-by">
+</div>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v="></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v="></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v="></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v="></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
+<script type="text/javascript" src="/js/src/post-details.js?v="></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v="></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 100608, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 100608, xid: "2018/01/19/ERP 商城 对接说明文档/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/100608/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

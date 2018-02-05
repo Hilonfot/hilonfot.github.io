@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/bitbug_favicon.ico?v=">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/bitbug_favicon.ico?v=">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/bitbug_favicon.ico?v=">
+
+
+
+
+
+
+  <meta name="keywords" content="work," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Hilon's Notes" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="短信使用说明，和使用需要用到的AppKey、SecretKey">
+<meta name="keywords" content="work">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿里大于短信[加密]">
+<meta property="og:url" content="http://hilon.xin/2018/01/29/阿里大于短信[加密]/index.html">
+<meta property="og:site_name" content="Hilon&#39;s Notes">
+<meta property="og:description" content="短信使用说明，和使用需要用到的AppKey、SecretKey">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-31T03:32:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="阿里大于短信[加密]">
+<meta name="twitter:description" content="短信使用说明，和使用需要用到的AppKey、SecretKey">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+<script>
+    (function(){
+        if('522923080'){
+            if (prompt('请输入文章密码') !== '522923080'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+  <link rel="canonical" href="http://hilon.xin/2018/01/29/阿里大于短信[加密]/"/>
+
+
+
+
+
+  <title>阿里大于短信[加密] | Hilon's Notes</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hilon's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Just 4 fun</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://hilon.xin/2018/01/29/阿里大于短信[加密]/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="万千但猫耳@">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/854166685.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hilon's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">阿里大于短信[加密]</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-29T11:02:59+08:00">
+                2018-01-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/works/" itemprop="url" rel="index">
+                    <span itemprop="name">works</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/01/29/阿里大于短信[加密]/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2018/01/29/阿里大于短信[加密]/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  短信使用说明，和使用需要用到的AppKey、SecretKey
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="短信发送说明"><a href="#短信发送说明" class="headerlink" title="短信发送说明"></a>短信发送说明</h1><p><font color="red" size="10" face="黑体">本次没有申请短信签名 2018.1.31</font></p>
+<h3 id="1-阿里大于官方文档"><a href="#1-阿里大于官方文档" class="headerlink" title="1.阿里大于官方文档"></a>1.阿里大于官方文档</h3><p><strong><a href="https://help.aliyun.com/document_detail/55451.html?spm=5176.doc59210.2.24.qUBdkb" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/55451.html?spm=5176.doc59210.2.24.qUBdkb</a></strong></p>
+<h3 id="2-AppKey-SecretKey-公司Key"><a href="#2-AppKey-SecretKey-公司Key" class="headerlink" title="2.AppKey / SecretKey(公司Key)"></a>2.AppKey / SecretKey(公司Key)</h3><p><strong>AppKey：</strong>LTAICnyoklbVL6XG<br><strong>SecretKey：</strong>g5e3TemogBBCVjtSWBbPFRZsUovvl2  </p>
+<h3 id="3-短信签名"><a href="#3-短信签名" class="headerlink" title="3.短信签名"></a>3.短信签名</h3><p>用于短信开头显示<br>例：【阿里云】，尊敬的用户：您的校验码：xxxx,工作人员不会索取，请勿泄漏。  </p>
+<h3 id="4-短信模板"><a href="#4-短信模板" class="headerlink" title="4.短信模板"></a>4.短信模板</h3><p>短信模板，即具体发送的短信内容。<br>短信模板可以支持验证码、短信通知、推广短信三种模式。验证码和短信通知，通过变量替换实现个性短信定制。推广短信不支持在模板中添加变量。  </p>
+<h1 id="短信模板"><a href="#短信模板" class="headerlink" title="短信模板"></a>短信模板</h1><h3 id="1-ERP–前端销售"><a href="#1-ERP–前端销售" class="headerlink" title="1.ERP–前端销售"></a>1.ERP–前端销售</h3><p><strong>短信签名：</strong>家由莱 / (品牌)<br><strong>新增经销商–ERP</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;name&#125;您好！品智家具已经为你开通了销售软件账号$&#123;user_name&#125;，初始密码$&#123;password&#125;,请使用时更改密码，并为销售员设计师开通对应账号$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>商品发货–ERP</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;name&#125;您好！你所购买的货品已安排发货，货品承运公司：$&#123;company&#125;,运单号$&#123;number&#125;,请留意物流/快递信息。</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-好居优家–基础短信验证码"><a href="#2-好居优家–基础短信验证码" class="headerlink" title="2.好居优家–基础短信验证码"></a>2.好居优家–基础短信验证码</h3><p><strong>短信签名：</strong>窝居智家<br><strong>验证码</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">您的验证码为：$&#123;code&#125;,工作人员不会索取，该验证码 5 分钟内有效，请勿泄漏于他人。</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-清分系统"><a href="#3-清分系统" class="headerlink" title="3.清分系统"></a>3.清分系统</h3><p><strong>用户注册</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，清分系统已经为您开通了登录帐号$&#123;user_name&#125;，初始密码$&#123;password&#125;，请在使用时更改密码，并且进入微信公众号进行账号绑定。</span><br></pre></td></tr></table></figure></p>
+<p><strong>经销商存入–通过</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，您在清分系统里已成功充值$&#123;money&#125;元，当前余额$&#123;final_money&#125;元，请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>经销商存入–未通过</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，您在清分系统里有一笔充值申请未能成功通过，请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>经销商录入消费</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，您在清分系统里已成功扣除$&#123;money&#125;元，当前余额$&#123;final_money&#125;元，请登录系统进行查询。为不影响您在系统内的操作，请及时进行充值$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>消费者提现–成功</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，您在清分系统里已成功提现$&#123;money&#125;元，请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>消费者提现–未成功</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，您在清分系统里有一笔提现申请未能成功通过，请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<h3 id="4-装修平台"><a href="#4-装修平台" class="headerlink" title="4.装修平台"></a>4.装修平台</h3><p><strong>待量房</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;username&#125;您好，您在装饰平台里已成功预约量房时间$&#123;liangfang_time&#125;，详情请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>确认量房</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;username&#125;您好，您在装饰平台里已确定量房时间$&#123;liangfang_time&#125;，详情请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>待确认设计图纸</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;username&#125;您好，您在装饰平台里一份设计图纸待确认，详情请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>待确认装修报价</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;username&#125;您好，您在装饰平台的装修报价已生成，详情请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>确认装修报价</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;username&#125;您好，您在装饰平台的装修报价已确认，详情请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>待付款</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;username&#125;您好，您在装饰平台的装修项目待付款，详情请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>项目经理待确认项目</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;xiangmujingli&#125;您好，您在装饰平台有一份新项目待接受，详情请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>项目经理确认项目</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;xiangmujingli&#125;您好，您在装饰平台已接受该 $&#123;username&#125; 用户的项目，详情请登录系统进行查询$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>申诉</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;shenshuren&#125;您好，您在装饰平台的申诉成功，详情最新进展请关注$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>申诉消息</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;shenshuren&#125;您好，您在装饰平台的有一条申述信息，详情最新进展请关注$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<p><strong>充值</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;chongzhiren&#125;您好，您在装饰平台的成功充值$&#123;chongzhi&#125;，详情请关注$&#123;mage&#125;。</span><br></pre></td></tr></table></figure></p>
+<hr>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	<div>
+	  
+	    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+	  
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/work/" rel="tag"># work</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/23/服务器安全注意事项/" rel="next" title="服务器安全注意事项">
+                <i class="fa fa-chevron-left"></i> 服务器安全注意事项
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="hypercomments_widget"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/854166685.jpg"
+                alt="万千但猫耳@" />
+            
+              <p class="site-author-name" itemprop="name">万千但猫耳@</p>
+              <p class="site-description motion-element" itemprop="description">Whisper to the World</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/hilonfot" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hilon2019@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/like_my_gf" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/5688240365" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mg.cqyonghong.com/" title="molgol ERP" target="_blank">molgol ERP</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#短信发送说明"><span class="nav-number">1.</span> <span class="nav-text">短信发送说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-阿里大于官方文档"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.阿里大于官方文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-AppKey-SecretKey-公司Key"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.AppKey / SecretKey(公司Key)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-短信签名"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.短信签名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-短信模板"><span class="nav-number">1.0.4.</span> <span class="nav-text">4.短信模板</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#短信模板"><span class="nav-number">2.</span> <span class="nav-text">短信模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-ERP–前端销售"><span class="nav-number">2.0.1.</span> <span class="nav-text">1.ERP–前端销售</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-好居优家–基础短信验证码"><span class="nav-number">2.0.2.</span> <span class="nav-text">2.好居优家–基础短信验证码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-清分系统"><span class="nav-number">2.0.3.</span> <span class="nav-text">3.清分系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-装修平台"><span class="nav-number">2.0.4.</span> <span class="nav-text">4.装修平台</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">万千但猫耳@</span>
+
+  
+</div>
+<div class="powered-by">
+</div>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v="></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v="></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v="></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v="></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
+<script type="text/javascript" src="/js/src/post-details.js?v="></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v="></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+		<script type="text/javascript">
+		_hcwp = window._hcwp || [];
+
+		_hcwp.push({widget:"Bloggerstream", widget_id: 100608, selector:".hc-comment-count", label: "{\%COUNT%\}" });
+
+		
+		_hcwp.push({widget:"Stream", widget_id: 100608, xid: "2018/01/29/阿里大于短信[加密]/"});
+		
+
+		(function() {
+		if("HC_LOAD_INIT" in window)return;
+		HC_LOAD_INIT = true;
+		var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+		var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+		hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/100608/"+lang+"/widget.js";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hcc, s.nextSibling);
+		})();
+		</script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
