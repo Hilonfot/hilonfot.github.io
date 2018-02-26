@@ -86,12 +86,10 @@
 <meta property="og:site_name" content="Hilon&#39;s Notes">
 <meta property="og:description" content="写的一点对接文档，用于跟商城那边做对接,写的还比较详细">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://hilon.xin/2018/01/19/ERP%20商城%20对接说明文档/images/595a7e1e266f2.gif">
-<meta property="og:updated_time" content="2018-02-05T01:59:16.000Z">
+<meta property="og:updated_time" content="2018-02-26T13:04:31.278Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ERP &#x2F; 商城 对接说明文档[加密]">
 <meta name="twitter:description" content="写的一点对接文档，用于跟商城那边做对接,写的还比较详细">
-<meta name="twitter:image" content="http://hilon.xin/2018/01/19/ERP%20商城%20对接说明文档/images/595a7e1e266f2.gif">
 
 
 
@@ -379,8 +377,7 @@
       
 
       
-        <p><img src="images/595a7e1e266f2.gif" alt=""></p>
-<h3 id="0-库房项目存放地址-http-mg-cqyonghong-com-woju"><a href="#0-库房项目存放地址-http-mg-cqyonghong-com-woju" class="headerlink" title="0. 库房项目存放地址 http://mg.cqyonghong.com/woju"></a>0. 库房项目存放地址 <a href="http://mg.cqyonghong.com/woju" target="_blank" rel="noopener">http://mg.cqyonghong.com/woju</a></h3><p><strong>URL</strong>： 项目地址<strong>·</strong>接口url   </p>
+        <h3 id="0-库房项目存放地址-http-mg-cqyonghong-com-woju"><a href="#0-库房项目存放地址-http-mg-cqyonghong-com-woju" class="headerlink" title="0. 库房项目存放地址 http://mg.cqyonghong.com/woju"></a>0. 库房项目存放地址 <a href="http://mg.cqyonghong.com/woju" target="_blank" rel="noopener">http://mg.cqyonghong.com/woju</a></h3><p><strong>URL</strong>： 项目地址<strong>·</strong>接口url   </p>
 <h3 id="1-token验证说明"><a href="#1-token验证说明" class="headerlink" title="1. token验证说明"></a>1. token验证说明</h3><p><strong>内容</strong>：制定一个token生成规则，按某些服务器端和客户端都拥有的共同属性生成一个随机串，客户端生成这个串，服务器收到请求也校验这个串。<br><strong>缺点</strong>： 随机串生成规则要保密 .<br><strong>Auth-date</strong>：[add by hilon2019@gmail.com  2018-01-15]      </p>
 <h5 id="发送端-生成token："><a href="#发送端-生成token：" class="headerlink" title="发送端 / 生成token："></a>发送端 / 生成token：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//请求列表，api是“index.php?module=user&amp;action=list”</span><br><span class="line"></span><br><span class="line">md5 (&apos;user&apos;.&apos;2018-01-15&apos;.&apos;#$@%!&apos;.&apos;list&apos;) </span><br><span class="line">//app生成token = 880fed4ca2aabd20ae9a5dd774711de2;</span><br><span class="line"></span><br><span class="line">//实际发起请求为 “index.php?module=user&amp;action=list&amp;token=880fed4ca2aabd20ae9a5dd774711de2”</span><br></pre></td></tr></table></figure>
 <h5 id="接收端接收-计算token："><a href="#接收端接收-计算token：" class="headerlink" title="接收端接收 / 计算token："></a>接收端接收 / 计算token：</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$module = $_GET[<span class="string">'module'</span>];</span><br><span class="line">$action = $_GET[<span class="string">'action'</span>];</span><br><span class="line">$token  = md5($module.date(<span class="string">'Y-m-d'</span>,time()).<span class="string">'#$@%!*'</span>.$action);</span><br><span class="line">$token_pre = md5($module.date(<span class="string">'Y-m-d'</span>,time()<span class="number">-24</span>*<span class="number">3600</span>).<span class="string">'#$@%!*'</span>.$action);</span><br><span class="line"><span class="keyword">if</span>($token == $_GET[<span class="string">'token'</span>] || $token_pre == $_GET[<span class="string">'token'</span>])&#123;</span><br><span class="line">    <span class="comment">//other code .....</span></span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">'access deny'</span>;</span><br><span class="line">    <span class="keyword">exit</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -860,6 +857,35 @@
   
 
   
+
+  
+<div id="hexo-helper-live2d">
+  <canvas id="live2dcanvas" width="150" height="300"></canvas>
+</div>
+<style>
+  #live2dcanvas{
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    opacity:0.7;
+    right: 0px;
+    z-index: 999;
+    pointer-events: none;
+    bottom: -20px;
+  }
+</style>
+<script type="text/javascript" src="/live2d/device.min.js"></script>
+<script type="text/javascript">
+const loadScript = function loadScript(c,b){var a=document.createElement("script");a.type="text/javascript";"undefined"!=typeof b&&(a.readyState?a.onreadystatechange=function(){if("loaded"==a.readyState||"complete"==a.readyState)a.onreadystatechange=null,b()}:a.onload=function(){b()});a.src=c;document.body.appendChild(a)};
+(function(){
+  if((typeof(device) != 'undefined') && (device.mobile())){
+    document.getElementById("live2dcanvas").style.width = '75px';
+    document.getElementById("live2dcanvas").style.height = '150px';
+  }else
+    if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
+  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/koharu.model.json", 0.5);});
+})();
+</script>
 
 </body>
 </html>
