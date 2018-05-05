@@ -112,9 +112,9 @@
       <category term="服务器" scheme="http://hilon.xin/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
-      <category term="服务器" scheme="http://hilon.xin/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="git" scheme="http://hilon.xin/tags/git/"/>
+    
+      <category term="服务器" scheme="http://hilon.xin/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
