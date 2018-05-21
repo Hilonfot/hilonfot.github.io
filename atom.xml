@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hilon.xin/"/>
-  <updated>2018-04-28T01:26:14.264Z</updated>
+  <updated>2018-05-21T03:40:52.858Z</updated>
   <id>http://hilon.xin/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小程序开发 [加密]</title>
+    <link href="http://hilon.xin/2018/05/21/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://hilon.xin/2018/05/21/小程序/</id>
+    <published>2018-05-21T03:31:04.000Z</published>
+    <updated>2018-05-21T03:40:52.858Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-页面布局"><a href="#1-页面布局" class="headerlink" title="1. 页面布局"></a>1. 页面布局</h3><p>新的尺寸单位 rpx<br>提倡使用科学的弹性盒模型  </p><h3 id="2-生命周期"><a href="#2-生命周期" class="headerlink" title="2. 生命周期"></a>2. 生命周期</h3><p>文件结构<br>生命周期函数  &amp;&amp; 事件<br> 路由  </p><h3 id="3-api"><a href="#3-api" class="headerlink" title="3. api"></a>3. api</h3><p>网络api （request、uploadFile、downloadFile、Socket） &amp;&amp; 图片上传处理<br>数据缓存  </p><h3 id="4-案例分析"><a href="#4-案例分析" class="headerlink" title="4. 案例分析"></a>4. 案例分析</h3><p>电商源码分析  </p>]]></content>
+    
+    <summary type="html">
+    
+      微信开发者社区：https://developers.weixin.qq.com/
+    
+    </summary>
+    
+      <category term="works" scheme="http://hilon.xin/categories/works/"/>
+    
+    
+      <category term="work" scheme="http://hilon.xin/tags/work/"/>
+    
+  </entry>
   
   <entry>
     <title>商城 接口说明文档[加密]</title>
