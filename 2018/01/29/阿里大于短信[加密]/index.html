@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Hilon&#39;s Notes">
 <meta property="og:description" content="短信使用说明，和使用需要用到的AppKey、SecretKey">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-17T09:35:21.611Z">
+<meta property="og:updated_time" content="2018-08-14T07:08:41.394Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里大于短信[加密]">
 <meta name="twitter:description" content="短信使用说明，和使用需要用到的AppKey、SecretKey">
@@ -381,7 +381,10 @@
 <h3 id="1-4-短信模板"><a href="#1-4-短信模板" class="headerlink" title="1.4.短信模板"></a>1.4.短信模板</h3><p>短信模板，即具体发送的短信内容。<br>短信模板可以支持验证码、短信通知、推广短信三种模式。验证码和短信通知，通过变量替换实现个性短信定制。推广短信不支持在模板中添加变量。  </p>
 <h2 id="2、短信模板"><a href="#2、短信模板" class="headerlink" title="2、短信模板"></a>2、短信模板</h2><h3 id="2-1-ERP–前端销售"><a href="#2-1-ERP–前端销售" class="headerlink" title="2.1 ERP–前端销售"></a>2.1 ERP–前端销售</h3><p><strong>短信签名：</strong><br><strong>新增经销商–ERP</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;name&#125;您好！品智家具已经为你开通了销售软件账号$&#123;user_name&#125;，初始密码$&#123;password&#125;,请使用时更改密码，并为销售员设计师开通对应账号。</span><br></pre></td></tr></table></figure></p>
 <p><strong>商品发货–ERP</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;name&#125;您好！你所购买的货品已安排发货，货品承运公司：$&#123;company&#125;,运单号$&#123;number&#125;,请留意物流/快递信息。</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-2-好居优家–基础短信验证码"><a href="#2-2-好居优家–基础短信验证码" class="headerlink" title="2.2 好居优家–基础短信验证码"></a>2.2 好居优家–基础短信验证码</h3><p><strong>短信签名：</strong>窝居智家<br><strong>验证码</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">您的验证码为：$&#123;code&#125;,工作人员不会索取，该验证码 5 分钟内有效，请勿泄漏于他人。</span><br></pre></td></tr></table></figure></p>
+<p><strong>客服接收到售后信息–ERP</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;name&#125;您好，收到一条来自$&#123;agent&#125;的售后消息，主题为：$&#123;theme&#125;,请尽快处理！</span><br></pre></td></tr></table></figure></p>
+<p><strong>加盟商收到客服回复–ERP</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;name&#125;您好，$&#123;afterSale&#125;回复了主题为：$&#123;theme&#125;的售后服务，请查看！</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-2-好居优家–基础短信验证码"><a href="#2-2-好居优家–基础短信验证码" class="headerlink" title="2.2 好居优家–基础短信验证码"></a>2.2 好居优家–基础短信验证码</h3><p><strong>短信签名：</strong>好居优家<br><strong>验证码</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">您的验证码为：$&#123;code&#125;,工作人员不会索取，该验证码 5 分钟内有效，请勿泄漏于他人。</span><br></pre></td></tr></table></figure>
 <h3 id="2-3-清分系统"><a href="#2-3-清分系统" class="headerlink" title="2.3 清分系统"></a>2.3 清分系统</h3><p><strong>用户注册</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，清分系统已经为您开通了登录帐号$&#123;user_name&#125;，初始密码$&#123;password&#125;，请在使用时更改密码，并且进入微信公众号进行账号绑定。</span><br></pre></td></tr></table></figure></p>
 <p><strong>经销商存入–通过</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，您在清分系统里已成功充值$&#123;money&#125;元，当前余额$&#123;final_money&#125;元，请登录系统进行查询。</span><br></pre></td></tr></table></figure></p>
 <p><strong>经销商存入–未通过</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的用户您好，您在清分系统里有一笔充值申请未能成功通过，请登录系统进行查询。</span><br></pre></td></tr></table></figure></p>
@@ -399,6 +402,7 @@
 <p><strong>申诉</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;shenshuren&#125;您好，您在装饰平台的申诉成功，详情最新进展请关注。</span><br></pre></td></tr></table></figure></p>
 <p><strong>申诉消息</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;shenshuren&#125;您好，您在装饰平台的有一条申述信息，详情最新进展请关注。</span><br></pre></td></tr></table></figure></p>
 <p><strong>充值</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;chongzhiren&#125;您好，您在装饰平台的成功充值$&#123;chongzhi&#125;，详情请关注。</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-5-商城"><a href="#2-5-商城" class="headerlink" title="2.5 商城"></a>2.5 商城</h3><p><strong>供应商新订单通知sc</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尊敬的$&#123;username&#125;您好，您在窝居智家商城系统有新的订单$&#123;orderno&#125;待确认，请及时登录系统进行处理。</span><br></pre></td></tr></table></figure></p>
 <h2 id="3、模版CODE"><a href="#3、模版CODE" class="headerlink" title="3、模版CODE"></a>3、模版CODE</h2><table>
 <thead>
 <tr>
@@ -606,6 +610,24 @@
 <td style="text-align:center">113221126</td>
 <td style="text-align:center">SMS_123673001</td>
 <td style="text-align:center">验证码</td>
+</tr>
+<tr>
+<td style="text-align:center">供应商新订单通知sc</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">SMS_142152639</td>
+<td style="text-align:center">短信通知</td>
+</tr>
+<tr>
+<td style="text-align:center">加盟商收到客服回复erp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">SMS_142060574</td>
+<td style="text-align:center">短信通知</td>
+</tr>
+<tr>
+<td style="text-align:center">客服接收到售后信息erp</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">SMS_142060572</td>
+<td style="text-align:center">短信通知</td>
 </tr>
 </tbody>
 </table>
@@ -849,7 +871,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、短信发送说明"><span class="nav-number">1.</span> <span class="nav-text">1、短信发送说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-阿里大于官方文档"><span class="nav-number">1.1.</span> <span class="nav-text">1.1.阿里大于官方文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-AppKey-SecretKey-公司Key"><span class="nav-number">1.2.</span> <span class="nav-text">1.2.AppKey / SecretKey(公司Key)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-短信签名"><span class="nav-number">1.3.</span> <span class="nav-text">1.3.短信签名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-短信模板"><span class="nav-number">1.4.</span> <span class="nav-text">1.4.短信模板</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、短信模板"><span class="nav-number">2.</span> <span class="nav-text">2、短信模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-ERP–前端销售"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 ERP–前端销售</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-好居优家–基础短信验证码"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 好居优家–基础短信验证码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-清分系统"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 清分系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-装修平台"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 装修平台</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、模版CODE"><span class="nav-number">3.</span> <span class="nav-text">3、模版CODE</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、短信发送说明"><span class="nav-number">1.</span> <span class="nav-text">1、短信发送说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-阿里大于官方文档"><span class="nav-number">1.1.</span> <span class="nav-text">1.1.阿里大于官方文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-AppKey-SecretKey-公司Key"><span class="nav-number">1.2.</span> <span class="nav-text">1.2.AppKey / SecretKey(公司Key)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-短信签名"><span class="nav-number">1.3.</span> <span class="nav-text">1.3.短信签名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-短信模板"><span class="nav-number">1.4.</span> <span class="nav-text">1.4.短信模板</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、短信模板"><span class="nav-number">2.</span> <span class="nav-text">2、短信模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-ERP–前端销售"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 ERP–前端销售</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-好居优家–基础短信验证码"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 好居优家–基础短信验证码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-清分系统"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 清分系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-装修平台"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 装修平台</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-商城"><span class="nav-number">2.5.</span> <span class="nav-text">2.5 商城</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、模版CODE"><span class="nav-number">3.</span> <span class="nav-text">3、模版CODE</span></a></li></ol></div>
             
 
           </div>
